@@ -32,6 +32,10 @@ p {
     padding: 3%;
     text-align: justify;
 }
+.sexy-font {
+    font-family: Alegreya Sans, sans-serif;
+    font-size: 160%;
+}
 img {
     max-width: 100%;
     height: auto;
@@ -39,7 +43,7 @@ img {
     margin-bottom: -4px;
 }
 header {
-    background-color: #FF8C00; 
+    background-color: #F9A700; 
     width: 100%;
     height: 130px;
 }
@@ -61,8 +65,8 @@ nav {
 }
 #menu-icon {
     display: hidden;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background: url(img/nav.png) no-repeat center;
 }
 a:hover#menu-icon {
@@ -130,7 +134,7 @@ article {
     width: 50%;
     height: auto;
 }
-#tablet {
+#upper-right {
     background-color: #C3D7DF;
 }
 aside {
@@ -139,13 +143,13 @@ aside {
     width: 50%;
     height: auto;
 }
-#tablet2 {
+#upper-right2 {
     background-color: #A2B1C1;
 }
-#mobile {
+#middle-left {
     background-color: #BEB9AD;
 }
-#desktop {
+#lower-left {
     background-color: #F1AA90;
 }
 .inner-wrapper-2 {
@@ -163,24 +167,20 @@ aside {
     float: left;
     text-align: center;
 }
-#google {
+#one-third-1 {
     background-color: #A2B1C1;
 }
-#marketing {
+#one-third-2 {
     background-color: #BEB9AD;
 }
-#customers {
+#one-third-3 {
     background-color: #AADCD2;
 }
-#smiley {
-    background-color: #AADCD2;
-    padding: 0 0 1%;
-    clear: both; 
-}
+
 /*--Start Footer--*/
 footer {
     background-color: #6991AC;
-    width: 100%;
+    width: 100%;   
 }
 .social-media {
     list-style-type: none;
@@ -267,7 +267,7 @@ footer.second p {
     aside {
         width: 100%;
     }
-    .hand-mobile {
+    .middle-left2 {
         display: none;
     }
     .one-third {
@@ -289,46 +289,10 @@ footer.second p {
     opacity: 0.0;
 }
 
-
-/*// BASE STYLES //*/
-/*
-html, body{
-  height: 100%;
-  width:100%;
-  overflow: hidden;
-  margin: 0;
-}*/
-
-.grass, .sky, .road{
-  position: relative;
-}
-
 .sky{
+  position: relative;
   height: 40%;
   background: skyblue;
-}
-
-.grass{
-  height: 30%;
-  background: seagreen;
-}
-
-.road{
-  height: 30%;
-  background: dimgrey;
-  box-sizing: border-box;
-  border-top: 10px solid grey;
-  border-bottom: 10px solid grey;
-  width: 100%;
-}
-
-.lines{
-  box-sizing: border-box;
-  border: 5px dashed #fff;
-  height: 0px;
-  width: 100%;
-  position: absolute;
-  top: 45%;
 }
 
 /*// ELEMENTS TO ANIMATE //*/
@@ -337,8 +301,8 @@ html, body{
   position: absolute;
   top: 330px;
   left: 0px;
-  animation: drive 3s both infinite linear,
-             jump 0.3s 1.2s ease; 
+  animation: drive 3s both infinite linear, 
+             jump 0.5s 1.2s ease; 
 }
 
 .luigi {
@@ -389,7 +353,127 @@ html, body{
 
 
 
+/*--COMING SOON--*/
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+    height: 100%
+}
+
+.bgimg {
+    /* Background image */
+    background-image: url('img/starnight.jpg');
+    /* Full-screen */
+    height: 100%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Add a font */
+    font-family: "Courier New", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+}
+
+
+/* Position text in the top-left corner */
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.countertext {
+    font-size:55px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+    margin: auto;
+    width: 40%;
+}
+/*--END COMING SOON--*/
 
 
 
+/*--REGISTER--*/
+* {box-sizing: border-box}
 
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #78A7DC;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #DE4F4F;
+  text-align: center;
+}
+
+.form-size {
+    width: 50%;
+    height: 50%; 
+    margin-left: 25%;
+}
+/*--END REGISTER--*/
